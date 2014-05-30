@@ -36,7 +36,7 @@ workaholic.prototype.new=function(data,callback){
 	 * */
 
 	request.post({
-		uri: this.options.host+":"+this.options.port+"/work/new",
+		uri: "http://"+this.options.host+":"+this.options.port+"/work/new",
 		json: {
 			ticketing: this.options.ticketing,
 			data: data
@@ -46,7 +46,7 @@ workaholic.prototype.new=function(data,callback){
 
 workaholic.prototype.status=function(tid,callback){
 	request.get({
-		uri: this.options.host+":"+this.options.port+"/work/status",
+		uri: "http://"+this.options.host+":"+this.options.port+"/work/status",
 		qs: {
 			ticket: tid
 		}
