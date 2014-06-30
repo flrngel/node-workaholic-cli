@@ -6,14 +6,14 @@ node.js client module for workaholic front
 
 	npm install workaholic-cli
 
-## How-to
+## Example
 
 	var workaholic=require("workaholic-cli");
 	var work=new workaholic();
 	
 	work.new({
-	  taskName: "php",
-	  argument: ["/tmp/test.php","2"]
+	  taskName: "phpTEST",
+	  argument: ["/tmp/thisfile.php","argument1"]
 	},function(e,r){
 	  // process_result
 	});
